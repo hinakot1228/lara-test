@@ -26,7 +26,8 @@ Route::get('/seedtech/seed', function () {
     // return view('フォルダ名.ファイル名');
 });
 
-Route::get('/tweets', 'TweetsController@index')->name('tweets.index');
+Route::get('/tweets', 'TweetController@index')->name('tweets.index');
+// Route::get('URL', 'コントローラー@コントローラーのメソッド')->name('URLの名前');
 
 // ルーティングの書き方
 // /というurlのリクエストが来た時に、welcome.blade.phpを表示せよ
