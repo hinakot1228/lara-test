@@ -12,11 +12,15 @@ class TweetController extends Controller
     public function index()
     {
         $tweet = Tweet::find(1);
+        // $tweet = Tweet::all();
         // find() → select from tweets where id = 1
+
+        // $user = User::all();
+
         dd($tweet);
         // エロクアント
         // Tweetsデーブルのid=1ので^他を取得せよ
-        return view('tweets.index');
+        return view('tweets.index', ['tweet'=>$tweet]);
         // view() → resources/viewsを参照する
         // () → tweetsフォルダ/index.blade.php
     }

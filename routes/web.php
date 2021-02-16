@@ -33,3 +33,6 @@ Route::get('/tweets', 'TweetController@index')->name('tweets.index');
 // /というurlのリクエストが来た時に、welcome.blade.phpを表示せよ
 
 // view関数 → resources/viewsフォルダを参照する
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

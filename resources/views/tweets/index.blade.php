@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Twitter</h1>
+    <h1>Twitterをつくるの？</h1>
+    <h2>{{ $tweet->title }}</h2>
+    <h3>{{ $tweet->body }}</h3>
 </body>
 </html>
